@@ -8,7 +8,7 @@ rm -rf playbooks
 kubespray aws -y --config kubespray.yml --nodes 2
 
 pushd playbooks
-git reset --hard cfea99c4ee56f8d7afe176fdc4a172f610bdc333
+# git reset --hard cfea99c4ee56f8d7afe176fdc4a172f610bdc333
 popd
 
 rm -rf playbooks/inventory/group_vars
