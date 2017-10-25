@@ -1,0 +1,29 @@
+# Common options
+# ---------------
+# Path where the kubespray ansible playbooks will be installed
+# Defaults to current user's home directory if not set
+kubespray_path: "/path to this repo/playbooks"
+# Default inventory path
+kubespray_git_repo: "https://github.com/kubespray/kubespray.git"
+# Logging options
+loglevel: "info"
+
+aws_access_key: "mine mine mine"
+aws_secret_key: "mine mine mine"
+key_name: "Your public key name"
+ami: "ami-6e1a0117"
+masters_instance_type: "t2.medium"
+nodes_instance_type: "t2.medium"
+etcds_instance_type: "t2.medium"
+masters_instance_profile_name: "your profile id"
+nodes_instance_profile_name: "your profile id"
+etcds_instance_profile_name: "your profile id"
+security_group_name: "Kubernetes"
+security_group_id: "your security group"
+assign_public_ip: True
+vpc_subnet_id: "your subnet id"
+region: "us-west-2"
+tags:
+  - type=k8s
+  - branch=development
+  - persist=true
